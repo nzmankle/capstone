@@ -1,3 +1,96 @@
-/*div {
+/* UNIVERSTAL */
+
+html {
+  font-size: 16px;
+}
+
+div, header, nav, footer {
   border: 1px solid black;
-}*/
+}
+
+/* HEADER */
+
+header {
+  position: fixed;
+  height: 4rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+/* HEADER - logo */
+
+.logo {
+  margin-left: 1.5rem;
+  display: flex;
+  align-items: center;
+}
+
+.colmar {
+  color: rgb(74, 74, 74);
+}
+
+.academy {
+  color: rgb(155, 155, 155);
+}
+
+ /* HEADER - desktop nav */
+
+.desktop {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  margin-right: 1rem;
+}
+
+nav ul {
+  display: flex;
+}
+
+.desktop ul li {
+  margin-left: 1rem;
+}
+
+nav a {
+  color: rgb(74, 74, 74);
+  text-decoration: none;
+}
+
+/* HEADER - mobile nav */
+
+.mobile {
+  display: none;
+}
+
+@media only screen and (max-width: 560px) {
+  .logo {
+    display: none;
+  }
+
+  .desktop {
+    display: none;
+  }
+
+  .mobile {
+    display: inline-block;
+    width: 100%;
+    margin-right: 1rem;
+    margin-left: 1rem;
+  }
+
+  nav ul {
+    justify-content: space-between;
+  }
+
+}
+
+
+
+
+
+
+/* FOOTER */
+
+footer {
+  display: flex;
+}
