@@ -7,20 +7,45 @@ html {
 body {
   margin: 0 auto;
   font-family: 'Roboto Condensed', sans-serif;
+  color: rgb(73, 73, 73);
 }
 
 h1 {
   display: block;
   font-size: 2rem;
   font-weight: bold;
-  /*margin-top: 0.67rem;
-  margin-bottom: 0.67rem;*/
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+h2 {
+    display: block;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-top: 0.83rem;
+    margin-bottom: 0.83rem;
+}
+
+h3 {
+    display: block;
+    font-size: 1.17rem;
+    font-weight: bold;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+a {
+  text-decoration: none;
 }
 
 p {
   display: block;
-  /*margin-top: 1rem;
-  margin-bottom: 1rem;*/
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+img {
+  width: 100%;
 }
 
 div, header, nav, footer {
@@ -128,18 +153,13 @@ header {
 
 #learn .big-img {
   padding-top: 2rem;
-  padding-right: 2.5rem;
   padding-bottom: 2rem;
-  width: 60%;
-}
-
-#learn img {
-  width: 100%;
+  max-width: 60%;
 }
 
 .text {
   border: 2px dotted red;
-  color: rgb(73, 73, 73);
+  padding-left: 2.5rem;
 }
 
 #learn .button {
@@ -150,7 +170,6 @@ header {
 }
 
 #learn .button a {
-  text-decoration: none;
   color: white;
 }
 
@@ -175,16 +194,92 @@ header {
   }
 
   .text h1{
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
   }
 
   .text p {
-    padding-bottom: 1.5rem;
+    margin-bottom: 1.5rem;
   }
 
   .text {
-    padding-bottom: 2rem;
+    padding-left: 0;
+    margin-bottom: 2rem;
+  }
+}
+
+/* PRACTICE */
+
+#practice {
+  border: 2px dotted blue;
+}
+
+#practice .container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+#practice .main {
+  max-width: 60%;
+}
+
+#practice .mob-img {
+  display: none;
+}
+
+#practice .big-img {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+#practice .event {
+  display: flex;
+}
+
+#practice .event:hover {
+  background-color: #d8d8d8;
+}
+
+#practice .events {
+  padding-left: 1.5rem;
+  max-width: 26.4375rem;
+}
+
+#practice .sml-img {
+  max-width: 35%;
+  padding: 1rem;
+}
+
+@media only screen and (max-width: 560px) {
+  #practice .main {
+    display: none;
+  }
+
+  #practice .sml-img {
+    display: none;
+  }
+
+  #practice .mob-img {
+    display: inline-block;
+  }
+
+  #practice .events {
+    padding-left: 0;
+    max-width: 100%;
+  }
+
+  #practice .event {
+    padding-top: 1rem;
+    flex-direction: column;
+  }
+
+  #practice .detail {
+    margin-left: 1rem;
+  }
+
+  #practice .event:hover {
+    background-color: white;
   }
 }
 
@@ -206,7 +301,6 @@ footer {
 
 .footnav ul li a{
   color: rgb(155, 155, 155);
-  text-decoration: none;
 }
 
 @media only screen and (max-width: 560px) {
