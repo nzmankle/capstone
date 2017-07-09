@@ -54,7 +54,6 @@ div, header, nav, footer {
 
 .container {
   padding: 0 1.5rem;
-  border: 2px solid blue;
   max-width: 1024px;
   margin: auto;
 }
@@ -138,12 +137,11 @@ header {
   }
 }
 
-/* LEARN */
+/* LEARN BANNER */
 
 #learn {
   padding-top: 4rem;
   background-color: #d8d8d8;
-  border: 2px dotted green;
 }
 
 #learn .container {
@@ -158,7 +156,6 @@ header {
 }
 
 .text {
-  border: 2px dotted red;
   padding-left: 2.5rem;
 }
 
@@ -184,7 +181,7 @@ header {
 
   #learn .big-img {
     padding: 0;
-    width: 100%;
+    max-width: 100%;
     max-height: 11.25rem;
     overflow: hidden;
   }
@@ -209,10 +206,6 @@ header {
 }
 
 /* PRACTICE */
-
-#practice {
-  border: 2px dotted blue;
-}
 
 #practice .container {
   display: flex;
@@ -282,6 +275,34 @@ header {
     background-color: white;
   }
 }
+
+/* START LEARNING */
+
+#start .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.courses {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+}
+
+.course {
+  width: 30%;
+  height: auto;
+  background-color: white;
+  margin: 0 .5rem 2rem .5rem;
+}
+
+/* THESIS */
+
+
 
 /* FOOTER */
 
