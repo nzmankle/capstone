@@ -19,19 +19,19 @@ h1 {
 }
 
 h2 {
-    display: block;
-    font-size: 1.5rem;
-    font-weight: bold;
-    margin-top: 0.83rem;
-    margin-bottom: 0.83rem;
+  display: block;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-top: 0.83rem;
+  margin-bottom: 0.83rem;
 }
 
 h3 {
-    display: block;
-    font-size: 1.17rem;
-    font-weight: bold;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
+  display: block;
+  font-size: 1.17rem;
+  font-weight: bold;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 a {
@@ -48,18 +48,25 @@ img, video {
   width: 100%;
 }
 
-div, header, nav, footer {
+/* div, header, nav, footer {
   border: 1px solid black;
-}
+} */
 
 .container {
   padding: 0 1.5rem;
   max-width: 1024px;
   margin: auto;
+  display: flex;
+  align-items: center;
 }
 
 .title {
   margin: 2rem 0;
+}
+
+.sml-img {
+  max-width: 35%;
+  padding: 1rem;
 }
 
 /* HEADER */
@@ -148,9 +155,7 @@ header {
 }
 
 #learn .container {
-  display: flex;
-  align-items: center;
-  background-color: #d8d8d8;
+  background-color: rgb(216, 216, 216);
 }
 
 #learn .big-img {
@@ -159,7 +164,7 @@ header {
   max-width: 60%;
 }
 
-.text {
+#learn .text {
   padding-left: 2.5rem;
 }
 
@@ -211,14 +216,16 @@ header {
 
 /* PRACTICE */
 
-#practice .container {
-  display: flex;
-  align-items: center;
+#practice {
   margin-bottom: 2rem;
 }
 
 #practice .main {
   max-width: 60%;
+}
+
+#practice .main-detail span {
+  font-size: 0.8rem;
 }
 
 #practice .mob-img {
@@ -243,17 +250,8 @@ header {
   max-width: 26.4375rem;
 }
 
-.sml-img {
-  max-width: 35%;
-  padding: 1rem;
-}
-
 @media only screen and (max-width: 560px) {
-  #practice .main {
-    display: none;
-  }
-
-  #practice .sml-img {
+  #practice .main, #practice .sml-img {
     display: none;
   }
 
@@ -283,8 +281,6 @@ header {
 /* START LEARNING */
 
 #start .container {
-  display: flex;
-  align-items: center;
   justify-content: center;
   flex-direction: column;
   background-color: rgb(234, 235, 236);
@@ -294,7 +290,11 @@ header {
   margin: 1rem;
 }
 
-.courses {
+#start .detail {
+  font-size: 0.9rem;
+}
+
+#start .courses {
   width: 90%;
   display: flex;
   justify-content: center;
@@ -302,7 +302,7 @@ header {
   margin-bottom: 2rem;
 }
 
-.course {
+#start .course {
   width: 30%;
   height: auto;
   background-color: white;
@@ -318,18 +318,18 @@ header {
     margin-bottom: 1rem;
   }
 
-  .courses {
+  #start .courses {
     width: 100%;
     margin-bottom: 1.5rem;
   }
 
-  .course {
+  #start .course {
     width: 100%;
     margin: 0 0 0.5rem 0;
     background-color: rgb(216, 216, 216);
   }
 
-  .course img, .course p {
+  #start .course img, .course p {
     display: none;
   }
 }
@@ -337,8 +337,6 @@ header {
 /* THESIS */
 
 #thesis .container {
-  display: flex;
-  align-items: center;
   flex-direction: column;
   justify-content: center;
 }
@@ -363,7 +361,7 @@ header {
 }
 
 #thesis .thesis:hover {
-  background-color: #d8d8d8;
+  background-color: rgb(216, 216, 216);
 }
 
 @media only screen and (max-width: 560px) {
@@ -393,7 +391,7 @@ footer {
   justify-content: space-between;
   color: rgb(155, 155, 155);
   margin-top: 1rem;
-  border-top: 1px solid #C0C0C0;
+  border-top: 1px solid rgb(192, 192, 192);
   height: 4rem;
   font-size: 0.8rem;
 }
