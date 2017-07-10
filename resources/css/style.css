@@ -44,7 +44,7 @@ p {
   margin-bottom: 1rem;
 }
 
-img {
+img, video {
   width: 100%;
 }
 
@@ -56,6 +56,10 @@ div, header, nav, footer {
   padding: 0 1.5rem;
   max-width: 1024px;
   margin: auto;
+}
+
+.title {
+  margin: 2rem 0;
 }
 
 /* HEADER */
@@ -141,12 +145,12 @@ header {
 
 #learn {
   padding-top: 4rem;
-  background-color: #d8d8d8;
 }
 
 #learn .container {
   display: flex;
   align-items: center;
+  background-color: #d8d8d8;
 }
 
 #learn .big-img {
@@ -231,7 +235,7 @@ header {
 }
 
 #practice .event:hover {
-  background-color: #d8d8d8;
+  background-color: rgb(214, 214, 214);
 }
 
 #practice .events {
@@ -239,7 +243,7 @@ header {
   max-width: 26.4375rem;
 }
 
-#practice .sml-img {
+.sml-img {
   max-width: 35%;
   padding: 1rem;
 }
@@ -283,6 +287,11 @@ header {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  background-color: rgb(234, 235, 236);
+}
+
+#start .description {
+  margin: 1rem;
 }
 
 .courses {
@@ -302,7 +311,35 @@ header {
 
 /* THESIS */
 
+#thesis .container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
 
+#thesis .thesis-container {
+  display: flex;
+  align-items: center;
+  padding-bottom: 2rem;
+}
+
+#thesis .main {
+  max-width: 60%;
+}
+
+#thesis .side {
+  padding-left: 1rem;
+  max-width: 26.4375rem;
+}
+
+#thesis .thesis {
+  display: flex;
+}
+
+#thesis .thesis:hover {
+  background-color: #d8d8d8;
+}
 
 /* FOOTER */
 
@@ -312,7 +349,9 @@ footer {
   justify-content: space-between;
   color: rgb(155, 155, 155);
   margin-top: 1rem;
-  border-top: 1px;
+  border-top: 1px solid #C0C0C0;
+  height: 4rem;
+  font-size: 0.8rem;
 }
 
 .footnav ul li {
